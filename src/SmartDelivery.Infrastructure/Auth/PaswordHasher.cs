@@ -1,3 +1,7 @@
+using Microsoft.AspNetCore.Identity;
+
+namespace SmartDelivery.Infrastructure.Auth;
+
 public class PasswordHasher : IPasswordHasher
 {
     public string HashPassword(string password)
@@ -17,4 +21,11 @@ public class PasswordHasher : IPasswordHasher
         var hashedProvidedPassword = HashPassword(providedPassword);
         return hashedProvidedPassword == hashedPassword;
     }
+
+    private readonly IPasswordHasher<string> _hasher = new PasswordHasher<string>();
+
+    public string Hash(string password) => _hasher.HashPassword("", password);
+
+    public bool Verify(string hashedPassword, string inputPassword) =>
+        _hasher.VerifyHashedPassword("", hashedPassword, inputPassword) == PasswordVerificationResult.Success;
 }

@@ -11,6 +11,10 @@ builder.Services.AddDbContext<SmartDeliveryDbContext>(options =>
 });
 //For PostgresSQL replace UseSqlServer to UseNpgsql
 
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddSingleton<PasswordHasher>();
+builder.Services.AddScoped<IJwtService, JwtService>();
+
 var app = builder.Build();
 
 

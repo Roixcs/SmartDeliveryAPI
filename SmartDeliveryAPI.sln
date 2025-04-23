@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDelivery.Persistence",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDelivery.Shared", "src\SmartDelivery.Shared\SmartDelivery.Shared.csproj", "{11936DA2-5362-4C6B-8E9E-32533DAAD38F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDelivery.Contracts", "src\SmartDelivery.Contracts\SmartDelivery.Contracts.csproj", "{AD7FEA25-901C-40CA-8899-4DFA61BF9A89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{11936DA2-5362-4C6B-8E9E-32533DAAD38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11936DA2-5362-4C6B-8E9E-32533DAAD38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11936DA2-5362-4C6B-8E9E-32533DAAD38F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD7FEA25-901C-40CA-8899-4DFA61BF9A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7FEA25-901C-40CA-8899-4DFA61BF9A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7FEA25-901C-40CA-8899-4DFA61BF9A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7FEA25-901C-40CA-8899-4DFA61BF9A89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CF3F345E-74B6-4081-B9FC-E386D3A1DE31} = {EE7C2B61-6D15-4EBE-A0C1-18AD4AF68AAD}
@@ -58,5 +64,6 @@ Global
 		{00837DE3-3D6B-4149-A784-6A8353FF67A0} = {EE7C2B61-6D15-4EBE-A0C1-18AD4AF68AAD}
 		{F0A96F72-20B1-4055-BE52-0C1A449246C8} = {EE7C2B61-6D15-4EBE-A0C1-18AD4AF68AAD}
 		{11936DA2-5362-4C6B-8E9E-32533DAAD38F} = {EE7C2B61-6D15-4EBE-A0C1-18AD4AF68AAD}
+		{AD7FEA25-901C-40CA-8899-4DFA61BF9A89} = {EE7C2B61-6D15-4EBE-A0C1-18AD4AF68AAD}
 	EndGlobalSection
 EndGlobal
